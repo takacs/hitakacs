@@ -1,0 +1,15 @@
+name: S3 Deploy
+
+on:
+  [push]
+
+jobs: 
+  deploy:
+    name: Deploy to S3
+    runs-on: ubuntu-latest
+      - name: build
+        run: npm run build
+        
+      - name: extract
+        run: npm run extract
+                             
