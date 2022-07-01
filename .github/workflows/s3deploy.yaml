@@ -1,13 +1,8 @@
-jobs: 
-  ? "Build and Deploy"
-  : 
+name: S3 Deploy
+on: [push]
+jobs:
+  Build and Deploy:
     runs-on: ubuntu-latest
-    steps: 
-      - 
-        run: "npm run build"
-      - 
-        run: "npm run extract"
-name: "S3 Deploy"
-true: 
-  - push
-
+    steps:
+      - run: npm run build 
+      - run: npm run extract 
