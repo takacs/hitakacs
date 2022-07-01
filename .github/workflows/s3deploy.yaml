@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm run build 
-      - run: npm run extract 
+        working-directory: .
+      - run: npm run extract
+        working-directory: .
