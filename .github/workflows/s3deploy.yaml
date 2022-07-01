@@ -1,7 +1,7 @@
 name: S3 Deploy
 on: [push]
 jobs:
-  name: Build and Deploy
+  build:
     runs-on: ubuntu-latest
     steps:
       - run: npm run build 
