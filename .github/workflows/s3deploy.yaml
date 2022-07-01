@@ -7,9 +7,9 @@ jobs:
   deploy:
     name: Deploy to S3
     runs-on: ubuntu-latest
-      - name: build
-        run: npm run build
+    - name: build
+      run: npm run build
         
-      - name: extract
-        run: npm run extract
+    - name: extract
+      run: npm run extract
                              
